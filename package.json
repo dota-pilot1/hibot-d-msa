@@ -1,0 +1,14 @@
+{
+  "name": "hibot-docu-msa",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "docker-compose up -d",
+    "dev:down": "docker-compose down",
+    "gateway": "pnpm --filter api-gateway dev",
+    "gateway:build": "pnpm --filter api-gateway build"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
