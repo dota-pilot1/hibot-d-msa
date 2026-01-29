@@ -52,4 +52,22 @@ pnpm gateway
 - 처음부터 Kafka 안 깔아도 됨 (HTTP로 시작)
 - DB 물리 분리보다 소유권 분리부터
 - shared에 Entity/Repository 금지
-# hibot-d-msa
+
+## 왜 이 구조가 좋은가?
+
+### apps/ 기준 분리
+
+서비스 단위로 독립 (api-gateway, auth-service)
+
+MSA 확장 시 폴더 하나 추가면 끝:
+
+```
+apps/
+├── api-gateway/        # 현재
+├── auth-service/       # 현재
+├── user-service/       # 확장 예정
+├── order-service/      # 확장 예정
+├── campaign-service/   # 확장 예정
+```
+
+각 서비스는 독립적으로 빌드/배포 가능
