@@ -52,3 +52,4 @@ pnpm gateway
 - 처음부터 Kafka 안 깔아도 됨 (HTTP로 시작)
 - DB 물리 분리보다 소유권 분리부터
 - shared에 Entity/Repository 금지
+# hibot-d-msa
